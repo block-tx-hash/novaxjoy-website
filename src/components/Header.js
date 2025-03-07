@@ -11,6 +11,10 @@ const HeaderContainer = styled.header`
   background-color: #f8f8f8;
   border-bottom: 1px solid #eee;
   font-family: 'Poppins', sans-serif;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const Logo = styled.h1`
@@ -40,6 +44,18 @@ const Nav = styled.nav`
 
     &:hover {
       color: #333;
+    }
+  }
+
+  @media (max-width: 768px) {
+    ul {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+    li {
+      margin-left: 0;
+      margin-top: 10px;
     }
   }
 `;

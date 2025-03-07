@@ -8,6 +8,9 @@ const GameList = styled.ul`
   padding: 40px;
   list-style: none;
   font-family: 'Poppins', sans-serif;
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const GameItem = styled.li`
@@ -15,6 +18,10 @@ const GameItem = styled.li`
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 `;
 
 const GameTitle = styled.h3`
