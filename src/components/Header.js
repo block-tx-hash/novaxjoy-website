@@ -70,7 +70,7 @@ function Header() {
           <li><Link to="/games">Games</Link></li>
           <li><Link to="/company">Company</Link></li>
           <li><Link to="/news">News</Link></li>
-          <li><Link to="/careers">Carrers</Link></li>
+          <li><Link to="/careers">Careers</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </Nav>
