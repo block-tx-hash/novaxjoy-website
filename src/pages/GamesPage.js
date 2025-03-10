@@ -27,6 +27,16 @@ const GameItem = styled.li`
 const GameTitle = styled.h3`
   margin-bottom: 10px;
   font-weight: 700;
+  padding: 10px; // 추가
+`;
+
+const GameDescription = styled.p`
+  padding: 10px; // 추가
+`;
+
+const GameImage = styled.img`
+  padding: 10px; // 추가
+  margin-bottom: 10px; // 추가
 `;
 
 const games = [
@@ -48,9 +58,9 @@ function GamesPage() {
     <GameList>
       {games.map((game) => (
         <GameItem key={game.title}>
-          <img src={game.imageUrl} alt={game.title} />
+          <GameImage src={game.imageUrl} alt={game.title} />
           <GameTitle>{game.title}</GameTitle>
-          <p>{game.description}</p>
+          <GameDescription>{game.description}</GameDescription>
         </GameItem>
       ))}
     </GameList>

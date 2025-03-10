@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Container = styled.div`
+`;
+
 const MainBanner = styled.section`
   background-image: url('/assets/images/main-banner.png');
   background-size: cover;
@@ -27,12 +30,14 @@ const MainBannerTitle = styled.h2`
 function HomePage() {
   return (
     <div>
-      <MainBanner>
-        <div>
-          <MainBannerTitle>Nova X Joy</MainBannerTitle>
-          <p>We make the best casual games</p>
-        </div>
-      </MainBanner>
+      <Container>
+        <MainBanner>
+          <div>
+            <MainBannerTitle>Nova X Joy</MainBannerTitle>
+            <p>We make the best casual games</p>
+          </div>
+        </MainBanner>
+      </Container>
       {/* 추가적인 섹션 */}
     </div>
   );

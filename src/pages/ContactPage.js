@@ -1,4 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const SubmitButton = styled.button`
+  padding: 10px 20px;
+  margin-top: 20px; // 추가
+`;
 
 function ContactPage() {
   return (
